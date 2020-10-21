@@ -10,4 +10,9 @@ class CustomerView
     print "> "
     return gets.chomp
   end
+
+  def ask_user_for_index
+    puts "Which customer number?"
+    gets.chomp.to_i - 1
+  end
 end

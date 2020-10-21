@@ -11,4 +11,9 @@ class Employee
   def manager?
     @role == 'manager'
   end
+
+  def delivery_person?
+    @role == 'delivery_person'
+  end
 end
+

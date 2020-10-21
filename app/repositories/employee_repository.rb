@@ -20,9 +20,17 @@ class EmployeeRepository
     @employees
   end
 
+  def delivery_people
+    @employees.select { |employee| employee.delivery_person? }
+  end
+
   def find_by_username(username)
     # look in the list of employees for the one with same username
     return @employees.find { |employee| employee.username == username }
+  end
+
+  def find(id)
+    return @employees.find { |employee| employee.id == id }
   end
 
   private

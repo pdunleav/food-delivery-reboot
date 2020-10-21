@@ -18,6 +18,6 @@ class MealsController
 
   def list
     meals = @meal_repo.all
-    @view.display_meals(meals)
+    @view.display(meals)
   end
 end
