@@ -125,27 +125,3 @@ ruby app.rb
 Make sure your two customer user actions work before moving on to the next feature.
 
 All green? Good! Time to `git add`, `commit` and `push`.
-
-## 3 - Optionals
-
-### 3.1 - Implement `edit` and `destroy` actions for meals and customers
-
-In our app, a user can't edit or destroy an existing meal or customer.
-
-Implement these additional user actions:
-- As a user, I can edit an existing meal
-- As a user, I can destroy an existing meal
-- As a user, I can edit an existing customer
-- As a user, I can destroy an existing customer
-
-Done? Time to `git add`, `commit` and `push`.
-
-### 3.2 - Refactor repositories with inheritance
-
-`MealRepository` and `CustomerRepository` have a lot of similarities don't they? In order to stay [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), we need to define a parent class, `BaseRepository`, which will hold all of the shared behavior and from which `MealRepository` and `CustomerRepository` will inherit.
-
-Write some code to implement this. It's a refactoring process so there is no new test for this part. If your `rake` was all green before, it should be all green after!
-
-Done? Time to `git add`, `commit` and `push`.
-
-You're done for today!
